@@ -1,85 +1,277 @@
+#body {
+    background: #F5F5F3;
+}
 
-body{background: #aaa;}
+#particles {
+    width: 100%;
+    height: 100vh;
+    background: #F5F5F3;
+}
 
-.pure-g img{width: 100%;}
-.pull-right{float: right;}
-.pull-left{float: left;}
-.veil{width: 100%;z-index: 0;height: 100%;background: rgba(0,0,0,0.6);position: relative;}
+#splash,
+section {
+    width: 100%;
+    padding: 5%;
+    border-bottom: 2px solid #ddd;
+}
 
-.img-rounded{border-radius:50%;border: 1px solid transparent;}
-.img-profil{width: 90px !important;height: 90px;border: 5px solid #000;margin-top: 25%; margin-right: 10px;}
-.profil{height:150px;display: block; margin: 5%; padding: 1%; color: #fff;}
+#splash {
+    height: 100vh;
+}
 
-.card{width:75%;min-height:150px;background: rgba(0,0,0,0.9); padding: 5px 10px;margin-bottom: 10px; display: block;text-align: center;color: #fff; font-family: 'Roboto';}
-.card img{width:60px;display:block;margin:auto;margin-bottom: 25px;}
+section {
+    min-height: 100vh;
+    background: transparent;
+}
 
-.contact-list{list-style: none;}
-.contact-list li{margin: 5px;}
+#splash .logo {
+    width: 200px;
+    height: 200px;
+    margin-left: 25%;
+    padding: 10% 15%;
+    display: flex;
+}
 
-.pure-menu-list a{color: #fff !important;}
-.pure-menu-list a:hover{cursor: pointer; color: #fff;}
+#splash {
+    border-bottom: 2px solid #ddd;
+}
 
-.pure-menu-list a:nth-child(2):hover{background: #A1BF36; }
-.pure-menu-list a:nth-child(1):hover{background: #FF5558; }
+#particles {
+    z-index: -99;
+    position: absolute;
+}
 
-.pure-form{width: 100%;}
-.pure-form :not(p){margin:10px;}
-.pure-form input{width: inherit; width: 100%;}
-/***************************************** header Style **********************************/
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100;
+}
 
-header{background: #212121; color: #fff;}
-header .pure-menu-list{float: right;}
+#sidebar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    background: #f3f3f3;
+    width: 100px;
+    height: 540px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 12%;
+    margin-left: 25px;
+}
 
-/***************************************** Sections style **********************************/
+#sidebar li {
+    text-align: center;
+    width: 100px;
+    /* Or whatever */
+    height: 100px;
+    /* Or whatever */
+    margin: auto;
+    /* Magic! */
+}
 
-body section{min-height:650px; border-bottom: 4px solid #000;}
+#sidebar li a {
+    text-decoration: none;
+    color: #330;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
 
-.title-text{font-family: 'Roboto'; color:#ffffff; line-height: 250%; padding: 1%;margin: 0;}
-.title-text span{background: rgba(0,0,0,0.8); padding: 5px; }
-/***************************************** Intro-Section style **********************************/
+#sidebar li:hover {
+    background: #ddd;
+}
 
-#intro{
-	background-image: url("../medias/kili.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed; 
-	padding:5% 10%;
+#sidebar li:hover:nth-child(1) a {
+    color: #db4437;
+}
+
+#sidebar li:hover:nth-child(2) a,
+#sidebar li:active:nth-child(2) a {
+    color: #FBB400;
+}
+
+#sidebar li:hover:nth-child(3) a {
+    color: #0F9D58;
+}
+
+#sidebar li:hover:nth-child(4) a {
+    color: #4285F4;
+}
+
+#sidebar li:hover:nth-child(5) a {
+    color: #663399;
 }
 
 
-/***************************************** Who-Section Style **********************************/
-
-
-#who{ background: #fff; }
-
-/***************************************** What-Section Style **********************************/
-
-#what{
-	background-image: url("../medias/what1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed; 
-	padding:5% 10%;
+/* #content {
+    width: 100%;
+    float: right;
+    height: 100%;
+    padding: 7.5% 10%;
 }
 
-/***************************************** What-Section Style **********************************/
+#content div {
+    float: right;
+    width: 75%;
+    margin: auto;
+} */
 
-#contact{
-	height: 600px;
-	background-image: url("../medias/contact.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top:5%;
-	padding-left: 2%;
-	padding-right: 2%;
-	padding-bottom: 5%;
+#contact form {
+    width: 100%;
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+    height: 100%;
 }
 
-/***************************************** Footer Style **********************************/
+h3>a:hover {
+    text-decoration: none;
+}
 
-footer{width:100%;padding:15px;background:#eee;color:#333;font-family:"Calibri";font-size:13px;text-align: center;line-height: 175%;}
-footer a{text-decoration:none;color:#F00;font-family:Lobster;}
-footer ul li a{padding:0px 20px 0px 20px;}
-footer a:hover{background:#F00;color:white;padding:10px 15px;border-radius:5px;cursor:hand;text-decoration:none;}
+.cat-icon {
+    padding: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    margin-right: 10px;
+}
+
+.cat-icon:hover {
+    background: #330;
+    color: white;
+    cursor: pointer;
+}
+
+.section_content .col {
+    display: flex;
+    align-items: stretch;
+}
+
+.black-white {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.1s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.black-white:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
 
 
+/********* Collage CSS **********************/
+
+.same-height {
+    height: 350px;
+}
+
+.same-width {
+    height: 175px;
+}
+
+.Collage {
+    /* 
+     * Change this to set the spacing of the images in the grid
+     */
+    padding: 10px;
+}
+
+.Collage img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all 0.1s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.Collage img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+
+/******************** Pages design *******************/
+
+#about {
+    background: #F5F5F3;
+}
+
+#about .top {
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: #db4437;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#about .bottom {
+    padding: 5%;
+    border: 2px solid #db4437;
+    background: #fff;
+}
+
+
+/********* Tabs design ***************/
+
+.tab {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.tab .menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.tab .menu a {
+    flex: 1 100%;
+    height: 50px;
+    padding: 2%;
+    text-decoration: none;
+    background: #ccc;
+    color: #200;
+    text-align: center;
+}
+
+.tab .menu a:hover,
+.tab .menu .active {
+    background: #bbb;
+}
+
+.tab .content {
+    border: 1px solid #200;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.tab .content div {
+    width: 100%;
+    height: inherit;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    .tab .menu {
+        flex-direction: column;
+    }
+    .tab .menu a {
+        margin: 0;
+    }
+}
