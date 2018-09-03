@@ -1,0 +1,19 @@
+{
+  "premises": {
+    "elmwood_mclaughlin": {
+      "descri": "dkldmkdmvlkdmlmdvlkm",
+      "premises": {}
+    },
+    "dieppe": {
+      "description": "Perfect. Here are the premises in Dieppe :\\n\\n1. 663 Gauvin Road\\n2. 901 Gauvin Road\\n3. 895 Gauvin Road \\n \\n Make your choice ?",
+      "premises": {
+        "1": "2-Bedrooms are $750+utilities and the Bachelor is $750 utilities included.",
+        "2": "There are 2 bedroom and 3 bedroom options available : \\n\\n 2-Bedrooms are $895+utilities \\n3-Bedrooms are $1025+utilities.",
+        "3": "There are 2 bedroom and 3 bedroom options available : \\n\\n 2-Bedrooms are $895+utilities \\n3-Bedrooms are $1025+utilities."
+      }
+    },
+    "riverview": {
+      "premises": {}
+    }
+  }
+}
